@@ -1,57 +1,76 @@
 # CLOUD-COMPUTING
 
-IN THIS ABOVE PDF I CREATE AND TERMINATE THE AWS CLOUD SERVICES.
 
-1. EC2 (LINUX & WINDOWS )
+### AWS Cloud Services: Step-by-Step Process
 
-STEP 1 : Click Server Option
-STEP 2 : Click EC2
-STEP 3 : Click Instance
-STEP 4 : Create a Server Name
-STEP 5 : Click Amazon Linux
-STEP 6 : Create a Key Pair ( Create a Keypair Name, Choose Key Pair Type, Choose Private Key File Formate)
-STEP 7 : Click Create Key Pair of Windows
-STEP 8 : Open Remote Desktop Connection ( RDC)
-STEP 9 : Type a User Name & Password
-STEP 10 : Get Password
-STEP 11 : Open RDC
-STEP 12 : Click Add Roles and Features
-STEP 13 : Install Progress
-STEP 14 : Test Page Run Successfully
-STEP 15 : Run Our New Web Page Through IP Address 
-STEP 16 : Click Linux Instance and Link IP Address
-STEP 17 : Open Putty App ( Type ec-user)
-STEP 18 : Successfully Installed 
-STEP 19 : Apache Started
-STEP 20 : Open Winscp
-STEP 21 : Path Will Be Download
-STEP 22 : Linux Run Successfully
+#### 1. **EC2 (Linux & Windows Instances)**
 
-FINALLY TERMINATE THE INSTANCE 
+**Steps to Create and Manage EC2 Instances:**
+
+- **Step 1**: Click on the **Server** option in the AWS Management Console.
+- **Step 2**: Click on **EC2**.
+- **Step 3**: Click on **Instances**.
+- **Step 4**: Create a **Server Name**.
+- **Step 5**: Select **Amazon Linux** as the operating system.
+
+**For Key Pair Creation:**
+- **Step 6**: Create a **Key Pair** with the following:
+  - Create a **Key Pair Name**.
+  - Choose **Key Pair Type**.
+  - Choose the **Private Key File Format**.
+
+**For Windows EC2 Instance Setup:**
+- **Step 7**: Click on **Create Key Pair for Windows**.
+- **Step 8**: Open **Remote Desktop Connection (RDC)**.
+- **Step 9**: Enter your **User Name** and **Password**.
+- **Step 10**: Retrieve the password by selecting **Get Password**.
+- **Step 11**: Open **RDC** again to access the Windows instance.
+- **Step 12**: Click **Add Roles and Features** to configure server roles.
+- **Step 13**: Wait for the **Install Progress** to complete.
+- **Step 14**: Test the server using the **default Test Page**.
+- **Step 15**: Access the new web page via the **IP Address**.
+
+**For Linux EC2 Instance Setup:**
+- **Step 16**: Click on the **Linux Instance** and retrieve the **IP Address**.
+- **Step 17**: Open **Putty** and enter the **ec-user** username.
+- **Step 18**: Confirm the successful installation and access of the Linux server.
+- **Step 19**: Start the **Apache server** to enable web hosting.
+- **Step 20**: Open **WinSCP** to transfer files securely between your computer and the server.
+- **Step 21**: Ensure the correct **path for downloads** is set up.
+- **Step 22**: Confirm that **Linux runs successfully** and the web server is functional.
+
+**Final Step**: **Terminate** the EC2 instances after the tasks are completed to avoid additional charges.
 
 
-2. SQS ( SIMPLE QUEUE SERVICE )
+#### 2. **SQS (Simple Queue Service)**
 
-STEP 1 : Click SQS Service
-STEP 2 : Create a SQS
-STEP 3 : SQS Service is Created Successfully
-STEP 4 : My Message is Both Sent & Recieved Successfully
-STEP 5 : My Message is 17 Bytes
-STEP 6 : Recieved My Message
+**Steps to Create and Use SQS:**
 
-3. SNS ( SIMPLE NOTIFICATION SERVICE)
+- **Step 1**: Click on the **SQS** service in the AWS Console.
+- **Step 2**: Click **Create SQS**.
+- **Step 3**: Confirm that the **SQS service** is created successfully.
+- **Step 4**: Send and receive messages in the queue.
+- **Step 5**: Confirm that your message size is **17 bytes**.
+- **Step 6**: Verify that the message is successfully **received** in the queue.
 
-STEP 1 : Create a IAM Role 
-STEP 2 : SNS ( SNS> AMAZON SNS>TOPICS > EC2 )Topic is Created Successfully
-STEP 3 : Subscription Created Successfully
-STEP 4 : Subscription Confirmed
-STEP 5 : Message Published Successfully
-STEP 6 : Check Your Mail Id. You Will Recieve the Mail
-STEP 7 : Instance Created Successfully
-STEP 8 : We Get a14 Metrics
-STEP 9 : We Created a Alarm Successfull. It Shows in Alarm
-STEP 10 : Instance is Stopped
-STEP 11 : I Get a Alarm Through Mail
+
+
+#### 3. **SNS (Simple Notification Service)**
+
+**Steps to Set Up SNS Notifications:**
+
+- **Step 1**: Create an **IAM Role** with the necessary permissions for SNS.
+- **Step 2**: Navigate to **SNS** and create a topic by going to **Amazon SNS > Topics > EC2**.
+- **Step 3**: Ensure that the **Subscription** is created successfully.
+- **Step 4**: Confirm the subscription by clicking the link sent to your email.
+- **Step 5**: Publish a **message** to the SNS topic.
+- **Step 6**: Check your email to verify that you’ve received the SNS notification.
+- **Step 7**: Create a new **EC2 instance** monitored by the SNS topic.
+- **Step 8**: Monitor **14 metrics** for the EC2 instance.
+- **Step 9**: Create an **alarm** for the EC2 instance and confirm that the alarm is displayed under “Alarms.”
+- **Step 10**: Stop the EC2 instance to trigger the alarm.
+- **Step 11**: Receive the **alarm notification** via email when the instance stops.
+
 
 
 4. IAM ( )
