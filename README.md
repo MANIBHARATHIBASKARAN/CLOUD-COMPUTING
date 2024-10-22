@@ -72,102 +72,36 @@
 - **Step 11**: Receive the **alarm notification** via email when the instance stops.
 
 
+### 4. **Creating CloudFront (Content Delivery Network)**
 
-4. IAM ( )
-
-STEP 1 : Click IAM user 
-STEP 2 : IAM > IDENTITY CENTER> USERS CREATE A USER
-STEP 3 : CREATE A EC2 INSTANCE 
-STEP 4 : Associate a ELASTIC IP Address
-
-
-
-
-
-
-STEP 1 : 
-STEP 2 : 
-STEP 3 : 
-STEP 4 : 
-STEP 5 : 
-STEP 6 : 
-STEP 7 : 
-STEP 8 : 
-STEP 9 : 
-STEP 10 : 
-STEP 11 : 
-STEP 12 : 
-STEP 13 : 
-STEP 14 : 
-STEP 15 :
+**Step 1**: Log in to the **AWS Management Console**.
+**Step 2**: In the search bar, type **CloudFront** and click on **CloudFront** under Services.
+**Step 3**: Click **Create Distribution**.
+**Step 4**: Select **Web** as the delivery method.
+**Step 5**: Under **Origin Settings**, do the following:
+- For **Origin Domain Name**, select the S3 bucket or custom origin (e.g., your website) that you want CloudFront to use as the source of the content.
+- Set **Origin Path** if required.
+- Leave the other fields as default unless you need specific settings for headers or cookies.
+**Step 6**: Under **Default Cache Behavior Settings**:
+- Set **Viewer Protocol Policy** to either **Redirect HTTP to HTTPS** or **HTTPS Only** for better security.
+- Adjust **Cache Based on Selected Request Headers**, **Object Caching**, and other options depending on your caching strategy.
+**Step 7**: Under **Distribution Settings**:
+- Set the **Price Class** based on your geographic requirements.
+- Enable **Logging** if you need detailed usage logs.
+**Step 8**: Click **Create Distribution**.  
+You will see the status as **In Progress**. Once it's deployed, you’ll receive a **CloudFront domain name** (e.g., `dxxxxxxxxxxx.cloudfront.net`) that you can use to access your content.
 
 
 
+### 5. **Creating CloudFormation Stack**
 
+**Step 1**: Log in to the **AWS Management Console**.
+**Step 2**: In the search bar, type **CloudFormation** and click on **CloudFormation** under Services.
+**Step 3**: Click **Create Stack**.
+**Step 4**: Select the **Template Source**. You can either upload a **template file** from your computer or use an existing template from an **S3 URL**.
+**Step 5**: Choose **Next**.
+**Step 6**: Configure the **Stack Name** and provide **Parameter Values** (if required by the template).
+**Step 7**: Under **Configure Stack Options**, you can add **Tags**, **Permissions**, and configure **Stack Policies** as needed.
+**Step 8**: Review the configuration, then click **Create Stack**.
+**Step 9**: CloudFormation will start creating the stack, deploying all the resources defined in the template. You can monitor the progress in the **Events** tab.
 
-STEP 1 : 
-STEP 2 : 
-STEP 3 : 
-STEP 4 : 
-STEP 5 : 
-STEP 6 : 
-STEP 7 : 
-STEP 8 : 
-STEP 9 : 
-STEP 10 : 
-STEP 11 : 
-STEP 12 : 
-STEP 13 : 
-STEP 14 : 
-STEP 15 :
-
-
-
-
-
-
-
-
-
-
-
-STEP 1 : 
-STEP 2 : 
-STEP 3 : 
-STEP 4 : 
-STEP 5 : 
-STEP 6 : 
-STEP 7 : 
-STEP 8 : 
-STEP 9 : 
-STEP 10 : 
-STEP 11 : 
-STEP 12 : 
-STEP 13 : 
-STEP 14 : 
-STEP 15 :
-
-
-
-
-
-
-
-
-
-
-STEP 1 : 
-STEP 2 : 
-STEP 3 : 
-STEP 4 : 
-STEP 5 : 
-STEP 6 : 
-STEP 7 : 
-STEP 8 : 
-STEP 9 : 
-STEP 10 : 
-STEP 11 : 
-STEP 12 : 
-STEP 13 : 
-STEP 14 : 
-STEP 15 :
